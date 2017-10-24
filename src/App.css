@@ -1,0 +1,130 @@
+.App-header {
+  background-color: white;
+  border-bottom: 4px solid #0099cc;
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  color: white;
+}
+.App-header .logo-image{
+  height: 100%;
+  float: left;
+}
+.App-header .header-lines {
+  float: left;
+  width: 80%;
+  height: 120px;
+}
+.App-header .header-lines .header-top-line{
+  background-color: #0099cc;
+  width: 80%;
+  height: 40px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 95% 100%, 100% 0, 35% 0);
+  clip-path: polygon(0 0, 0 100%, 95% 100%, 100% 0, 35% 0);
+  margin: 15px 0px;
+}
+.App-header .header-lines .header-bottom-line{
+  background-color: #0099cc;
+  width: 80%;
+  height: 40px;
+  -webkit-clip-path: polygon(0 0, 0 100%, 95% 100%, 100% 0, 35% 0);
+  clip-path: polygon(0 0, 0 100%, 65% 100%, 70% 0, 35% 0);
+  margin: 15px 0px;
+}
+
+.App-body {
+  width: 900px;
+  margin: 0 auto;
+  background-color: white;
+  min-height: 450px;
+  border-radius: 3px;
+}
+.App-body h1 {
+  padding: 25px;
+}
+.App-body h5 {
+  padding: 3px 25px;
+  font-style: italic;
+}
+.App-body .full-img>img {
+  width: 740px;
+  display: block;
+  margin: 12px auto;
+}
+.App-body .full-width {
+  display: block;
+  margin: 0 auto;
+}
+.App-body .full-width p{
+  padding: 2px 20px;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: -1;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+/******** nav styles ***********/
+
+.nav-list{
+  text-align: center;
+  background: #eee; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#eee, #888); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#eee, #888); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#eee, #888); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#eee, #888); /* Standard syntax */  
+}
+
+.nav-list > ul {
+  margin: 0px;
+}
+
+.nav-list > ul > li {
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.nav-list > ul > li:hover {
+  background-color: #ddd;
+}
+
+.nav-list > ul > li > a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 700;  
+}
+
+
+
+
+
+/********* spin animations ********/
+
+.spin-CW {
+  animation: spin infinite 7s linear;  
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin-CCW {
+  animation: reverse-spin infinite 7s linear;  
+}
+
+@keyframes reverse-spin {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
