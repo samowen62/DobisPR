@@ -13,9 +13,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <img src={require('./Dobis/HomeOffice.jpg')} id="bg" alt="" />
+        <img src={`${process.env.PUBLIC_URL}/Dobis/HomeOffice.jpg`}  id="bg" alt="" />
         <div className="App-header">
-          <img className="logo-image" src={require('./Dobis/Logo.png')} />
+          <img className="logo-image" src={`${process.env.PUBLIC_URL}/Dobis/Logo.png`}  />
           <div className="header-lines">
             <div className="header-top-line"></div>
               <div className="header-bottom-line"></div>
